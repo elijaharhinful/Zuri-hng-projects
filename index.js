@@ -1,5 +1,5 @@
 const {createServer} = require('http');
-const port = 3000;
+const port = process.env.port || 3000;
 
 const server = createServer((req, res) => {
     res.writeHead(200, {
